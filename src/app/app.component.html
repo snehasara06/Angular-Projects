@@ -1,0 +1,52 @@
+<app-component1></app-component1>
+
+<!-- <app-component1 [title1]="title1"></app-component1> -->
+
+<!-- <h1>{{title1}}</h1>
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" id="name" placeholder="Enter Name" formControlName="user">
+    <br><br>
+    <input type="password" id="password" placeholder="Enter Password" formControlName="password">
+    <br><br>
+    <button>Login</button>
+</form> -->
+<!-- 
+<h1>{{title2}}</h1>
+<form #registerform="ngForm" (ngSubmit)="registerUser(registerForm.value)">
+  <input type="text" id="firstname" placeholder="Enter First Name" formControlName="fname">
+  <br><br>
+  <input type="text" id="lastname" placeholder="Enter LastName" formControlName="lname">
+  <br><br>
+  <input type="email" id="emailid" placeholder="Enter Email ID" formControlName="mail">
+  <br><br>
+  <input type="password" id="password" placeholder="Enter Password" formControlName="password">
+  <br><br>
+  <input type="password" id="conpass" placeholder=" Confirm Password" formControlName="conpass">
+  <br><br>
+  <button>Register</button>
+</form> -->
+<div  class="container">
+  <h2>Register</h2>
+  <form (ngSubmit)="registerUser(registerForm.value)">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" formControlName="first">
+    </div>
+
+    <div class="form-group">
+      <label>LastName</label>
+      <input type="text" class="form-control" formControlName="last">
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" formControlName="mail">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Phone number</label>
+      <input type="tel" class="form-control" formControlName="phone">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
